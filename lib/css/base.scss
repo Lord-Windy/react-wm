@@ -1,0 +1,14 @@
+body {
+  background-color: #505050;
+}
+
+$active-header-color: red;
+
+.window {
+  position: absolute;
+  background-color: white;
+
+  .header {
+    background-color: $active-header-color;
+  }
+}
