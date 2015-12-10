@@ -3,3 +3,5 @@ node_js:
   - 5.2.0
 install:
   - npm install
+notifications:
+  slack: kothteam:1bqwYJJ1FXun41w3mzn4hHTY
