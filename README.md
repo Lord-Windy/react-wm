@@ -15,3 +15,6 @@
     npm start
     ```
 5. Open http://localhost:3000 in your browser
+
+## Component Tree
+![Component Tree](https://www.lucidchart.com/publicSegments/view/a1b41edd-36b8-457d-b7b8-923e64675612/image.png)
