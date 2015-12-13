@@ -2,7 +2,7 @@ $active-header-color: red;
 $secondary-header-color: white;
 $header-height: 28px;
 $header-button-margin: 4px;
-$window-border-radius: 3px;
+$window-border-radius: 0px;
 
 .window {
   position: absolute;
@@ -22,7 +22,7 @@ $window-border-radius: 3px;
     line-height: $header-height;
     border-radius: $window-border-radius $window-border-radius 0 0;
     cursor: default;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: rgba(255, 0, 0, 1);
 
     // Diable selecting header text
     -webkit-touch-callout: none;
@@ -43,11 +43,12 @@ $window-border-radius: 3px;
       color: white;
       border: none;
       border-radius: ($window-border-radius * 2 / 3);
-      font-size: ($header-height / 2);
+      font-size: 14px;
       line-height: $header-height - $header-button-margin * 2;
       text-align: center;
       outline: none;
       cursor: pointer;
+      font-weight: 100;
 
       &:hover {
         background-color: $secondary-header-color;
