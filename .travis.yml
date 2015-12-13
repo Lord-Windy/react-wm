@@ -5,3 +5,4 @@ install:
   - npm install
 notifications:
   slack: kothteam:1bqwYJJ1FXun41w3mzn4hHTY
+    on_success: change
