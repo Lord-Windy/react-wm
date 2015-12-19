@@ -22,7 +22,7 @@ $window-border-radius: 0px;
     line-height: $header-height;
     border-radius: $window-border-radius $window-border-radius 0 0;
     cursor: default;
-    background-color: rgba(255, 0, 0, 1);
+    background-color: rgba(255, 0, 0, 0.7);
 
     // Diable selecting header text
     -webkit-touch-callout: none;
@@ -69,4 +69,38 @@ $window-border-radius: 0px;
     top: $header-height;
     bottom: 0;
   }
+}
+
+$launcher-height: 48px;
+$launcher-padding: 4px;
+$launcher-btn-font-size: ($launcher-height - $launcher-padding * 2);
+
+.launcher {
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  height: $launcher-height;
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.6);
+
+  .launcher-btn {
+    background-color: transparent;
+    color: white;
+    width: $launcher-height - $launcher-padding * 2;
+    height: $launcher-height - $launcher-padding * 2;
+    border: none;
+    font-size: $launcher-btn-font-size;
+    line-height: $launcher-btn-font-size - 10;
+    padding-bottom: 6px;
+    margin: $launcher-padding;
+    outline: none;
+    text-align: center;
+
+    &:hover {
+      background-color: white;
+      color: red;
+    }
+  }
+
+
 }
