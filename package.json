@@ -41,8 +41,12 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "json-loader": "^0.5.4",
     "react": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react-dom": "^0.14.0",
+    "react-markdown": "^2.1.1",
+    "react-remarkable": "^1.1.1",
+    "remarkable": "^1.6.2"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/jest/preprocessor.js"
