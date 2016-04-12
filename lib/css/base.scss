@@ -4,9 +4,11 @@ $header-height: 28px;
 $header-button-margin: 4px;
 $window-border-radius: 0px;
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300|Titillium+Web);
+
 .window {
   position: absolute;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   border-radius: $window-border-radius;
   background-color: rgba(0, 0, 0, 0);
   -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -65,19 +67,67 @@ $window-border-radius: 0px;
 
   .content {
     position: absolute;
-    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #F5F3EE;
     width: 100%;
     top: $header-height;
     bottom: 0;
     overflow-y: scroll;
     overflow-x: scroll;
 
+    .textWindow{
+      font-family: 'Titillium Web', sans-serif;
+      position:relative;
+      float:left;
+      margin: 0;
+      padding: 0;
+      ul{
+        list-style-type: none;
+      }
+      img{
+        float:right;
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      figcaption{
+        font-size: 0.8em;
+        font-style: italic;
+        position: relative;
+        text-align: center;
+        display: table;
+        padding: 10px;
+        float:right;
+      }
+      body {
+
+        font-family: 'Titillium Web', sans-serif;
+        line-height: 1.88889;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        font-family: 'Titillium Web', sans-serif;
+      	margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+      	text-align:left;
+      	}
+      h2 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: bold;
+        padding-top: 7px;
+        padding-bottom: 2px;
+        margin: 1px;
+      }
+    }
+
+
   }
 }
 
-$launcher-height: 48px;
-$launcher-padding: 4px;
-$launcher-btn-font-size: ($launcher-height - $launcher-padding * 2);
+$launcher-height: 50px;
+$launcher-padding: 5px;
+$launcher-btn-font-size: ($launcher-height - $launcher-padding * 3);
 
 .launcher {
   background-color: rgba(255, 0, 0, 0.7);
@@ -95,10 +145,10 @@ $launcher-btn-font-size: ($launcher-height - $launcher-padding * 2);
     border: none;
     font-size: $launcher-btn-font-size;
     line-height: $launcher-btn-font-size - 10;
-    padding-bottom: 6px;
+    padding-bottom: 7px;
     margin: $launcher-padding;
     outline: none;
-    text-align: center;
+    text-align: right;
 
     &:hover {
       background-color: white;
